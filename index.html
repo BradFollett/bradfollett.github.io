@@ -32,7 +32,7 @@
         }
         .self-assessment-container {
             display: flex;
-            align-items: flex-start; /* Align items at the start of the container */
+            align-items: center; /* Center items vertically */
             gap: 20px; /* Space between text and image */
             margin: 20px 0;
         }
@@ -43,6 +43,9 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center text content vertically */
         }
         .self-assessment:hover {
             transform: translateY(-5px);
