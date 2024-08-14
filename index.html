@@ -30,10 +30,16 @@
             font-size: 2.5em;
             letter-spacing: 1.5px;
         }
+        .self-assessment-container {
+            display: flex;
+            align-items: flex-start; /* Align items at the start of the container */
+            gap: 20px; /* Space between text and image */
+            margin: 20px 0;
+        }
         .self-assessment {
+            flex: 1;
             background: #fff;
             padding: 20px;
-            margin: 20px 0;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
@@ -45,6 +51,12 @@
             color: #000080;
             font-size: 2em;
             margin-bottom: 15px;
+        }
+        .self-assessment img {
+            width: 150px;
+            height: auto;
+            border-radius: 75px;
+            display: block;
         }
         .photo-gallery {
             display: flex;
@@ -65,10 +77,10 @@
             transform: translateY(-5px);
         }
         .photo-gallery img {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        max-height: 400px; /* Adjust this value to fit the image better */
-        object-fit: cover; /* Ensure the image covers the area */
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
         }
         .photo-gallery .description {
             padding: 15px;
@@ -100,7 +112,7 @@
             font-size: 2em;
             margin-bottom: 15px;
         }
-        .video-section video {
+        .video-section iframe {
             width: 100%;
             max-width: 720px;
             border-radius: 10px;
@@ -114,41 +126,49 @@
     </header>
 
     <div class="container">
-        <div class="self-assessment">
-            <h2>Self Assessment</h2>
-            <p>
-                Completing my Computer Science program and developing my ePortfolio have been instrumental in shaping my professional goals and preparing me for a successful career in the field. Throughout my coursework, I have demonstrated strengths in software engineering, data structures, algorithms, and database management. These skills are reflected in the projects I've completed, which showcase my ability to apply technical knowledge to solve real-world problems.
-            </p>
-            <p>
-                In addition to my academic achievements, my current role as a Software Engineer at Lockheed Martin has provided me with valuable experience in collaborating within a team environment using agile methodologies. This role has enhanced my ability to work effectively in a dynamic setting, where regular communication and iterative development are key. The experience of working in sprints, attending daily scrums, and participating in code reviews has sharpened my ability to contribute to projects efficiently while maintaining high-quality standards.
-            </p>
-            <p>
-                The program also emphasized the importance of clear communication, particularly when presenting technical concepts to non-technical stakeholders. Whether it was documenting my projects or explaining the rationale behind certain design decisions, I learned to articulate complex ideas in a way that is accessible and relevant to different audiences. This skill is crucial in ensuring that technical solutions align with business needs and user expectations.
-            </p>
-            <img src="images/me.jpg" alt="Brad Follett" style="width: 150px; height: auto; border-radius: 75px;">
+        <div class="self-assessment-container">
+            <div class="self-assessment">
+                <h2>Self Assessment</h2>
+                <p>
+                    Completing my Computer Science program and developing my ePortfolio have been instrumental in shaping my professional goals and preparing me for a successful career in the field. Throughout my coursework, I have demonstrated strengths in software engineering, data structures, algorithms, and database management. These skills are reflected in the projects I've completed, which showcase my ability to apply technical knowledge to solve real-world problems.
+                </p>
+                <p>
+                    In addition to my academic achievements, my current role as a Software Engineer at Lockheed Martin has provided me with valuable experience in collaborating within a team environment using agile methodologies. This role has enhanced my ability to work effectively in a dynamic setting, where regular communication and iterative development are key. The experience of working in sprints, attending daily scrums, and participating in code reviews has sharpened my ability to contribute to projects efficiently while maintaining high-quality standards.
+                </p>
+                <p>
+                    The program also emphasized the importance of clear communication, particularly when presenting technical concepts to non-technical stakeholders. Whether it was documenting my projects or explaining the rationale behind certain design decisions, I learned to articulate complex ideas in a way that is accessible and relevant to different audiences. This skill is crucial in ensuring that technical solutions align with business needs and user expectations.
+                </p>
+            </div>
+            <img src="images/me.jpg" alt="Brad Follett">
         </div>
 
         <div class="photo-gallery">
             <div>
-                <a href="https://github.com/BradFollett/project1" target="_blank">
+                <a href="https://github.com/BradFollett/project-repo1" target="_blank">
                     <img src="images/slideshow.png" alt="Top 5 Detox/Wellness Vacations Slideshow">
                 </a>
-                <p>Top 5 Detox/Wellness Vacations Slideshow</p>
-                <p>This project includes a slideshow showcasing top detox/wellness vacations with smooth transitions and navigation.</p>
+                <div class="description">Top 5 Detox/Wellness Vacations Slideshow</div>
+                <div class="full-description">
+                    <p>Description</p>
+                </div>
             </div>
             <div>
-                <a href="https://github.com/BradFollett/project2" target="_blank">
+                <a href="https://github.com/BradFollett/project-repo2" target="_blank">
                     <img src="images/opengl.jpeg" alt="OpenGL 3D Scene">
                 </a>
-                <p>OpenGL 3D Scene</p>
-                <p>This project demonstrates a 3D scene rendered using OpenGL, including detailed visual effects and interactive elements.</p>
+                <div class="description">OpenGL 3D Scene</div>
+                <div class="full-description">
+                    <p>Description</p>
+                </div>
             </div>
             <div>
-                <a href="https://github.com/BradFollett/project3" target="_blank">
-                    <img src="images/database.png" alt="Brad Follett SNHU CS-340 Dashboard" style="height: auto;">
+                <a href="https://github.com/BradFollett/project-repo3" target="_blank">
+                    <img src="images/database.png" alt="Brad Follett SNHU CS-340 Dashboard">
                 </a>
-                <p>Brad Follett SNHU CS-340 Dashboard</p>
-                <p>This dashboard showcases data management and visualization features implemented for a database course project.</p>
+                <div class="description">Brad Follett SNHU CS-340 Dashboard</div>
+                <div class="full-description">
+                    <p>Description</p>
+                </div>
             </div>
         </div>
 
