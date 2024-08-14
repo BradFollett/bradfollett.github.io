@@ -65,10 +65,10 @@
             transform: translateY(-5px);
         }
         .photo-gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        max-height: 400px; /* Adjust this value to fit the image better */
+        object-fit: cover; /* Ensure the image covers the area */
         }
         .photo-gallery .description {
             padding: 15px;
@@ -130,31 +130,25 @@
 
         <div class="photo-gallery">
             <div>
-                <a href="https://github.com/BradFollett/project-repo1" target="_blank">
+                <a href="https://github.com/BradFollett/project1" target="_blank">
                     <img src="images/slideshow.png" alt="Top 5 Detox/Wellness Vacations Slideshow">
                 </a>
-                <div class="description">Top 5 Detox/Wellness Vacations Slideshow</div>
-                <div class="full-description">
-                    <p>Description</p>
-                </div>
+                <p>Top 5 Detox/Wellness Vacations Slideshow</p>
+                <p>This project includes a slideshow showcasing top detox/wellness vacations with smooth transitions and navigation.</p>
             </div>
             <div>
-                <a href="https://github.com/BradFollett/project-repo2" target="_blank">
+                <a href="https://github.com/BradFollett/project2" target="_blank">
                     <img src="images/opengl.jpeg" alt="OpenGL 3D Scene">
                 </a>
-                <div class="description">OpenGL 3D Scene</div>
-                <div class="full-description">
-                    <p>Description</p>
-                </div>
+                <p>OpenGL 3D Scene</p>
+                <p>This project demonstrates a 3D scene rendered using OpenGL, including detailed visual effects and interactive elements.</p>
             </div>
             <div>
-                <a href="https://github.com/BradFollett/project-repo3" target="_blank">
-                    <img src="images/database.png" alt="Brad Follett SNHU CS-340 Dashboard">
+                <a href="https://github.com/BradFollett/project3" target="_blank">
+                    <img src="images/database.png" alt="Brad Follett SNHU CS-340 Dashboard" style="height: auto;">
                 </a>
-                <div class="description">Brad Follett SNHU CS-340 Dashboard</div>
-                <div class="full-description">
-                    <p>Description</p>
-                </div>
+                <p>Brad Follett SNHU CS-340 Dashboard</p>
+                <p>This dashboard showcases data management and visualization features implemented for a database course project.</p>
             </div>
         </div>
 
