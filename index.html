@@ -38,24 +38,21 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
-            justify-content: space-between;
             position: relative;
-        }
-        .self-assessment:hover {
-            transform: translateY(-5px);
         }
         .self-assessment h2 {
             color: #003366;
             font-size: 2em;
             margin-bottom: 15px;
         }
+        .self-assessment .text {
+            flex: 1;
+        }
         .self-assessment img {
             width: 200px;
             height: auto;
             border-radius: 100px;
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
+            margin-left: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .photo-gallery {
@@ -104,18 +101,24 @@
             margin: 20px 0;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .video-section h2 {
-            color: #003366;
-            font-size: 2em;
-            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .video-section iframe {
-            width: 100%;
-            max-width: 720px;
+            width: 60%;
+            max-width: 420px;
             border-radius: 10px;
             border: 3px solid #66ccff;
+        }
+        .video-section img {
+            width: 30%;
+            height: auto;
+            border-radius: 100px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .video-section .video-text {
+            width: 60%;
         }
     </style>
 </head>
@@ -126,7 +129,7 @@
 
     <div class="container">
         <div class="self-assessment">
-            <div>
+            <div class="text">
                 <h2>Self Assessment</h2>
                 <p>
                     Completing my Computer Science program and developing my ePortfolio have been instrumental in shaping my professional goals and preparing me for a successful career in the field. Throughout my coursework, I have demonstrated strengths in software engineering, data structures, algorithms, and database management. These skills are reflected in the projects I've completed, which showcase my ability to apply technical knowledge to solve real-world problems.
@@ -142,8 +145,8 @@
         </div>
 
         <div class="video-section">
-            <h2>Code Review</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bZUbzZtV8WM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/bZUbzZtV8WM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="images/me.jpg" alt="Brad Follett">
         </div>
 
         <div class="photo-gallery">
